@@ -1,0 +1,38 @@
+\begin{problem}{Maximize Minimum Pair Difference}{standard input}{standard output}{2 seconds}{256 megabytes}
+
+You are given an array $A$ of \textbf{even length} $n$.
+
+Your task is to produce another array of $n/2$ pairs, such that:
+
+\begin{itemize}
+  \item Each element $a_i$ in $A$ belongs to exactly one pair.
+  \item The minimum pair difference over all the $n/2$ pairs is maximized. 
+\end{itemize}
+
+A pair difference of a pair $(x, y)$ is the absolute value of $x-y$ $(|x-y|)$.
+
+Print the value of the maximized \t{minimum pair difference} after optimally pairing up the elements.
+
+\InputFile
+The first line of the input contains a single integer $n$ $(1 \leq n \leq 10^5)$, the size of the array.
+
+The second line contains $n$ integers $a_1, a_2, \dots, a_n$ $(1\leq a_i \leq 10^9)$.
+
+\OutputFile
+Output one single number, the maximized \t{minimum pair difference} after pairing up the elements.
+
+\Example
+
+\begin{example}
+\exmpfile{example.01}{example.01.a}%
+\end{example}
+
+\Note
+The elements can be paired up into pairs $(2,4)$, $(5,1)$, and $(6,4)$.
+
+The minimum pair difference is $min(|2-4|, |5-1|, |6-4|) = 2$.
+
+There are other possibilities too, yet the minimum pair difference does not exceed $2$, so $2$ will be the answer.
+
+\end{problem}
+

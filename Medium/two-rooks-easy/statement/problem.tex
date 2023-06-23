@@ -1,0 +1,44 @@
+\begin{problem}{Yet Another Chess Puzzle}{standard input}{standard output}{2 seconds}{256 megabytes}
+
+Sara plays chess a lot. She also likes puzzles related to it.
+
+In her dad's news journal, she found a chess puzzle that she can't solve manually, and she asked you for help.
+
+Given a $n \times n$ chessboard, and two \href{https://en.wikipedia.org/wiki/Rook_(chess)}{rooks}. You have to find the number of ways to place the two rooks on the board such that they don't attack each other.
+
+A rook can move any number of steps in $4$ directions (left, right, up and down). Therefore it attacks any piece that sits on the same row or on the same column it is located on. The following image shows its movements:
+
+   
+
+
+\begin{center}
+\includegraphics[width=8cm]{attack.png}
+\small{All cells highlighted in red are attacked by the rook.}
+\end{center}
+
+\Example
+
+   
+
+There are two ways we can place $2$ rooks in a $2 \times 2$ chessboard. There are no other possibilities than that:
+
+\begin{center}
+\includegraphics[width=16cm]{rooks.png}
+\end{center}
+
+
+\InputFile
+A positive integer $n$ $(2 \leq n \leq 100)$, the size of the chessboard.
+
+\OutputFile
+One integer, the answer to the puzzle.
+
+\Examples
+
+\begin{example}
+\exmpfile{example.01}{example.01.a}%
+\exmpfile{example.02}{example.02.a}%
+\end{example}
+
+\end{problem}
+

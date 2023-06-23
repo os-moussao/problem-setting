@@ -1,0 +1,32 @@
+\begin{problem}{Make The Sum Equal to Zero}{standard input}{standard output}{3 seconds}{512 megabytes}
+
+You are given an array $A$ of $n$ integers, you can do the following operation any number of times (possibly zero):
+
+\begin{itemize}
+  \item Pick any element of the array and flip its sign, from negative to positive or vice versa. (Yes, you can change the same element multiple times).
+\end{itemize}
+
+Can you make the sum of the array equal to zero?
+
+\InputFile
+The first line of the input contains a single integer $n$ $(1 \leq n \leq 500)$, the size of the array.
+
+The second line contains $n$ integers $a_1, a_2, \dots, a_n$ $(-400 \leq a_i \leq 400)$.
+
+\OutputFile
+Output \t{"YES"} if you can make the sum equal to zero, otherwise print \t{"NO"}.
+
+\Examples
+
+\begin{example}
+\exmpfile{example.01}{example.01.a}%
+\exmpfile{example.02}{example.02.a}%
+\end{example}
+
+\Note
+In the first testcase, it is enough to flip the $6$-th element from $100$ to $-100$ and the sum becomes $0$.
+
+In the second test case it is impossible to make the sum equal to zero.
+
+\end{problem}
+

@@ -1,0 +1,30 @@
+\begin{problem}{Encryption key}{standard input}{standard output}{1 second}{256 megabytes}
+
+Lily, a gifted girl, wants to decrypt a message made of lowercase English letters from \t{a} to \t{e}. Her unique gift is knowing how to come up with decryption keys. This time she knows the formula to come up with the key from the string itself. However she needs some help to calculate it.
+
+The decryption key for the message is calculated as follows:
+
+\begin{itemize}
+\item First, every character has a value of $2^{\;its\;position\;in\;alphabets}$. The value of \t{a} is $2^0$, for \t{b} it's $2^1$ and so on...
+\item The initial value of the key is $0$, and as we move on (starting from the first character) if there is another character with a \textbf{strictly greater} value to the right of it (not necessarily immediately after it) we subtract the character's value from the key. Otherwise we add its value to the key.
+\end{itemize}
+
+Given the message Lily wants to decrypt, can you help her with calculating the key using her formula?
+
+\InputFile
+The first and the only line of the input contains a string $s \; (1 \leq |s| \leq 10^6)$. The encrypted message (without spaces, only letters from \t{a} to \t{e}). 
+
+\OutputFile
+An integer, the decryption key for that message.
+
+\Example
+
+\begin{example}
+\exmpfile{example.01}{example.01.a}%
+\end{example}
+
+\Note
+The key for \t{ebbbceda} is $2^4 - 2^1 - 2^1 - 2^1 - 2^2 + 2^4 + 2^3 + 2^0 = 31$.
+
+\end{problem}
+

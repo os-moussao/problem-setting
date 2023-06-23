@@ -1,0 +1,37 @@
+\begin{problem}{Minimum Sum of a Sorted Pair (Hard Version)}{standard input}{standard output}{2 seconds}{256 megabytes}
+
+\textbf{The only difference between the two versions of the problem is the size of the given array.}
+
+You are give an array $a_1, a_2, \dots, a_n$. A pair $(i,j)$ is considered sorted if:
+
+\begin{itemize}
+  \item $1 \leq i < j \leq n$
+  \item And $a_i < a_j$
+\end{itemize}
+
+Among all sorted pairs your task is to find one with the minimum sum $a_i + a_j$.
+
+If there is no pair satisfying the inequality print $-1$, otherwise print the value of the minimum sum.
+
+\InputFile
+The first line of the input contains a single integer $n$ $(1 \leq n \leq 10^5)$, the size of the array.
+
+The second line contains $n$ integers $a_1, a_2, \dots, a_n$ $(1\leq a_i \leq 10^9)$.
+
+\OutputFile
+One single integer, the minimum pair sum, or $-1$ if there are no sorted pairs.
+
+\Examples
+
+\begin{example}
+\exmpfile{example.01}{example.01.a}%
+\exmpfile{example.02}{example.02.a}%
+\end{example}
+
+\Note
+In the first testcase all the sorted pairs are: $(2$-nd$,3$-rd$)$, $(2$-nd$,4$-th$)$, $(2$-nd$,5$-th$)$, $(3$-rd$,5$-th$)$ and $(4$-th$,5$-th$)$. The one that has the minimum sum is the pair $(2$-nd$,4$-th$)$ with sum $2+3=5$.
+
+In the second testcase, there is no sorted pair in the array, so the answer will be $-1$.
+
+\end{problem}
+
